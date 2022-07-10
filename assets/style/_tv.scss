@@ -1,0 +1,30 @@
+.tv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .tv-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 60%;
+        margin: 0 auto;
+    h2 {
+        font-size: 2.8rem;
+    }
+    p {
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        line-height: 1.3;
+    }
+    }    
+}
+.tv-review {
+    img {
+    mask-image: url('../images/header.jpg');
+    mask-size: 100vmin;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+}

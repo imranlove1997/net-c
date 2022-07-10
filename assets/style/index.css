@@ -1,0 +1,346 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+hr {
+  margin: 0;
+  border: 0.5rem solid #222222;
+}
+
+h1, h2, h3, h4, h5, p, .fa, summary {
+  color: #FFFFFF;
+}
+
+summary::marker {
+  content: '';
+}
+
+details[open] summary .fa {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.email-sub {
+  display: -ms-grid;
+  display: grid;
+}
+
+.email-sub h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.email-sub .sub-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.email-sub .sub-btn input {
+  width: 60%;
+  padding: 0.5rem 0.6rem;
+}
+
+.email-sub .sub-btn button {
+  width: 20%;
+  padding: 0.5rem 0.6rem;
+  background: #E52913;
+  color: #FFFFFF;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+  position: relative;
+  background: transparent;
+  z-index: 2;
+}
+
+nav a {
+  color: #E52913;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: url("../images/header.jpg") no-repeat center center/cover;
+  text-align: center;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+          box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+
+.hero {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+  margin: 9rem auto;
+  color: #FFFFFF;
+  gap: 2rem;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero h3 {
+  font-size: 2rem;
+}
+
+.tv {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.tv .tv-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.tv .tv-content h2 {
+  font-size: 2.8rem;
+}
+
+.tv .tv-content p {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  line-height: 1.3;
+}
+
+.tv-review img {
+  -webkit-mask-image: url("../images/header.jpg");
+          mask-image: url("../images/header.jpg");
+  -webkit-mask-size: 100vmin;
+          mask-size: 100vmin;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+}
+
+.faq {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.faq h2 {
+  font-size: 2.5rem;
+  font-family: bold;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.faq details {
+  text-align: left;
+  margin: 0.3rem auto;
+  width: 100%;
+}
+
+.faq details summary {
+  font-size: 1.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  list-style-type: none;
+  padding: 1rem;
+  background: #303030;
+}
+
+.details-info {
+  margin-top: 0.3rem;
+}
+
+.details-info p {
+  padding: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  word-spacing: 2;
+  background-color: #303030;
+}
+
+.footer {
+  max-width: 70%;
+  margin: 1rem auto;
+  overflow: auto;
+}
+
+.footer,
+.footer a {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+.footer li {
+  line-height: 1.9;
+}
+
+.footer .lang-select {
+  margin-top: 2rem;
+  color: #999;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #333;
+  padding: 1rem 1.2rem;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=index.css.map */
